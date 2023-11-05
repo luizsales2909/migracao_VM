@@ -1,15 +1,17 @@
 #Migração Máquinas Virtuais (VM)
-Gerenciamwnro de Mobilidade e Migração de VM para computação em névoa
+Gerenciamento de Mobilidade e Migração de VM para computação em névoa
 
 Permitir o gerenciamento de mobilidade de dispositivos e migração de serviços em computação em névoa
 
-Mais detalhes podem ser encontrados no seguinte artigo: Puliafito, Carlo, et al. "MobFogSim: Simulação de Mobilidade e Migração para Fog Computing." Prática e Teoria de Modelagem de Simulação (2019)
+Mais detalhes podem ser encontrados no seguinte artigo: Sales, Luiz Carlos Silva de, "MECANISMO DE SELEÇÃO DE POLÍTICAS DE MIGRAÇÃO DE MÁQUINAS VIRTUAIS EM FUNÇÃO DE DIFERENTES DEMANDAS DE RECURSOS."  (2023)
 
 ## Executando o algoritmo
 
-Construindo sua simulação
-*Primeiro passo: Siga os seguintes passos
-* Segunda etapa: Forneça o conjunto de dados de mobilidade do usuário no diretório de entrada
+Construindo seu cenário de execução
+* Primeira etapa: Faça do download do conjunto de funções no repositorio github: https://github.com/luizsales2909/migracao_VM
+* Segunda etapa: Forneça o conjuto de dados do Cenário (ruas, ERBs, cloudlets, rede de fibra ótica)
+* Terceira etapa: Forneça o conjunto de dados de mobilidade do usuário no diretório de entrada (trajetos)
+* Quarta etapa: Forneça as variáveis globais de configuração da rede
 * Terceiro passo: Inicialize o pacote CloudSim. Deve ser chamado antes de criar qualquer entidade.
 *Quarta etapa: Crie todos os dispositivos
 * Quinto passo: Criar Corretor
@@ -24,7 +26,7 @@ Um exemplo de aplicativo é definido em src/org/fog/vmmobile/AppExample.java
 ### Executando na linha de comando:
 Faça correr
 
-### Executando no Eclipse IDE:
+### Executando no MATLAB 2023b:
 Crie um novo projeto definindo este repositório como diretório principal
 
 Configurações: Projeto -> Propriedades -> Caminho de construção Java -> Bibliotecas -> ADICIONAR JARs externos -> Selecione os arquivos JARs no diretório jars
@@ -34,26 +36,19 @@ Em src/org/fog/vmmobile/AppExample.java, execute como -> executar configuraçõe
 Em src/org/fog/vmmobile/AppExample.java, execute como -> aplicativo Java
 
 ### Requisitos
-* SDK JAVA
+* MATLAB
 
-Opcional:
 
-* IBM CPLEX para algoritmos de otimização
+## Variáveis globais de configuração da rede de computação em névoa
+Exemplo:
+*largura_banda = 100;
+*tamanho_VM = 1280;
+*limite_maximo_cobertura = 500; % em metros
+*V_Media = 40 * 1000 / 3600; % 40 km/h transformando para m/s
+*total_paginas = 32; % Número total de páginas a serem copiadas na primeira rodada
+*paginas_modificadas_por_rodada = [4, 3, 2]; % Número de páginas modificadas em cada rodada subsequente
+*tamanho_pagina = 40; % em MB
+*latencia_rede = 10; % em milesegundos
+*velocidade_leitura = 500; % MB/s
+*velocidade_escrita = 200; % MB/s
 
-* cscope para navegar no código fonte
-
-## Parâmetros
-
-* Primeiro parâmetro: 0/1 -> processos de migração são negados ou permitidos
-* Segundo parâmetro: Inteiro Positivo -> seed a ser utilizado na geração de números aleatórios
-* Terceiro parâmetro: 0/1 -> A abordagem do ponto de migração é fixa (0) ou baseada na velocidade do usuário (1)
-* Quarto parâmetro: 0/1/2 -> Abordagem da estratégia de migração para selecionar o Cloudlet de destino. Pode ser baseado na latência mais baixa (0), na distância mais baixa entre o usuário e o cloudlet (1) ou na distância mais baixa entre o usuário e o ponto de acesso (2)
-* Quinto parâmetro: Inteiro Positivo -> Número de usuários
-* Sexto parâmetro: Inteiro Positivo -> Largura de Banda da Rede Base entre cloudlets
-* Sétimo parâmetro: 0/1/2 -> Política de migração baseada em Migração completa de VM/Fria (0), Migração completa de contêiner (1) ou Migração ao vivo de contêiner (3)
-* Oitavo parâmetro: Número inteiro não negativo -> Previsão de mobilidade do usuário, em segundos
-* Nono parâmetro: Número inteiro não negativo -> Imprecisão na previsão da mobilidade do usuário, em metros
-* Décimo parâmetro: Inteiro positivo negativo -> Latência da rede base entre cloudlets
-
-Exemplo
-1 290538 0 0 1 11 0 0 0 61
