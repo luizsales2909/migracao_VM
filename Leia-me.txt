@@ -21,6 +21,8 @@ Analise os resultados;
 
 Faça os ajustes no algoritmo;
 
+Simule novamente.
+
 Requisitos
 MATLAB
 
