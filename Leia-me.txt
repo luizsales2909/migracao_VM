@@ -1,54 +1,36 @@
-#Migração Máquinas Virtuais (VM)
-Gerenciamento de Mobilidade e Migração de VM para computação em névoa
-
+Algoritmo de gerenciamento de mobilidade de dispositivos e migração de serviços em computação em névoa em MATLAB 
 Permitir o gerenciamento de mobilidade de dispositivos e migração de serviços em computação em névoa
 
-Mais detalhes podem ser encontrados no seguinte artigo: Sales, Luiz Carlos Silva de, "MECANISMO DE SELEÇÃO DE POLÍTICAS DE MIGRAÇÃO DE MÁQUINAS VIRTUAIS EM FUNÇÃO DE DIFERENTES DEMANDAS DE RECURSOS."  (2023)
+Mais detalhes podem ser encontrados no seguinte artigo: Sales, Luiz Carlos Silva de, "Mecanismo de Seleção de Políticas de Migração de Máquinas Virtuais Função de Diferentes Demandas de Recursos." (2023)
 
-## Executando o algoritmo
+Executando o algoritmo no MATLAB 2023b:
 
-Construindo seu cenário de execução
-* Primeira etapa: Faça do download do conjunto de funções no repositorio github: https://github.com/luizsales2909/migracao_VM
-* Segunda etapa: Forneça o conjuto de dados do Cenário (ruas, ERBs, cloudlets, rede de fibra ótica)
-* Terceira etapa: Forneça o conjunto de dados de mobilidade do usuário no diretório de entrada (trajetos)
-* Quarta etapa: Forneça as variáveis globais de configuração da rede
-* Terceiro passo: Inicialize o pacote CloudSim. Deve ser chamado antes de criar qualquer entidade.
-*Quarta etapa: Crie todos os dispositivos
-* Quinto passo: Criar Corretor
-* Sexta etapa: Crie uma máquina virtual
-* Sétima etapa: Crie um aplicativo (appModule, appEdge, appLoop e tuplas)
-* Oitavo passo: Configurar a rede
-* Nono passo: Inicia a simulação
-* Etapa final: Imprimir resultados quando a simulação terminar
+Faça o download do conjunto de funções no repositorio github: https://github.com/luizsales2909/migracao_VM;
 
-Um exemplo de aplicativo é definido em src/org/fog/vmmobile/AppExample.java
+Abra o MATLAB;
 
-### Executando na linha de comando:
-Faça correr
+Abra o arquivo Manhattan_cenario;
 
-### Executando no MATLAB 2023b:
-Crie um novo projeto definindo este repositório como diretório principal
+Forneça as variáveis globais de configuração da rede;
 
-Configurações: Projeto -> Propriedades -> Caminho de construção Java -> Bibliotecas -> ADICIONAR JARs externos -> Selecione os arquivos JARs no diretório jars
+Inicie a simulação;
 
-Em src/org/fog/vmmobile/AppExample.java, execute como -> executar configurações -> Aplicativo Java -> AppExample -> Argumentos -> Argumentos do programa -> Insira os parâmetros conforme necessário
+Imprimima resultados quando a simulação terminar para relatório_acumulativo
 
-Em src/org/fog/vmmobile/AppExample.java, execute como -> aplicativo Java
+Analise os resultados;
 
-### Requisitos
-* MATLAB
+Faça os ajustes no algoritmo;
 
+Requisitos
+MATLAB
 
-## Variáveis globais de configuração da rede de computação em névoa
-Exemplo:
-*largura_banda = 100;
-*tamanho_VM = 1280;
-*limite_maximo_cobertura = 500; % em metros
-*V_Media = 40 * 1000 / 3600; % 40 km/h transformando para m/s
-*total_paginas = 32; % Número total de páginas a serem copiadas na primeira rodada
-*paginas_modificadas_por_rodada = [4, 3, 2]; % Número de páginas modificadas em cada rodada subsequente
-*tamanho_pagina = 40; % em MB
-*latencia_rede = 10; % em milesegundos
-*velocidade_leitura = 500; % MB/s
-*velocidade_escrita = 200; % MB/s
-
+Variáveis globais de configuração da rede de computação em névoa
+Exemplo: 
+*largura_banda = 100; % em Mbps 
+*tamanho_VM = 1280; % em MB 
+*limite_maximo_cobertura = 500; % em metros 
+*V_Media = 40 * 1000 / 3600; % 40 km/h transformando para m/s 
+*total_paginas = 32; % Número total de páginas a serem copiadas na primeira rodada 
+*paginas_modificadas_por_rodada = [4, 3, 2]; % Número de páginas modificadas em cada rodada subsequente 
+*tamanho_pagina = 40; % em MB *latencia_rede = 10; % em milesegundos 
+*velocidade_leitura = 500; % MB/s *velocidade_escrita = 200; % MB/s
