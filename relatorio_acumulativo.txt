@@ -201,5 +201,102 @@ Movimento previsível	Estática	E2	P1	11	7	779.52	62.72	8960.00
 Conexão de rede instável	Estática	E3	P2	12	6	1392.18	163.26	15360.00
 Conexão de rede instável	Estática	E3	P2	12	6	1392.18	163.26	15360.00
 Movimento previsível	Estática	E2	P1	19	5	556.80	44.80	6400.00
-Conexão de rede instável	Estática	E3	P2	12	5	1160.15	136.05	12800.00
-Movimento previsível	Estática	E2	P1	6	5	556.80	44.80	6400.00
+Necessidade de economia de energia	Estática	E2	P1	11	7	779.52	62.72	8960.00
+Conexão de rede instável	Estática	E3	P2	6	2	464.06	54.42	5120.00
+Necessidade de economia de energia	Estática	E2	P1	13	6	668.16	53.76	7680.00
+Alta demanda de armazenamento	Dinâmica	E3	P2	17	9	2088.27	244.89	23040.00
+Movimento previsível	Estática	E2	P1	14	12	1336.32	107.52	15360.00
+Alta demanda de armazenamento	Dinâmica	E3	P2	11	6	1392.18	163.26	15360.00
+Alta demanda de processamento	Dinâmica	E1	P2	12	4	928.12	108.84	10240.00
+Movimento rápido	Dinâmica	E3	P2	12	4	928.12	108.84	10240.00
+Baixa demanda de largura de banda	Estática	E2	P1	11	5	556.80	44.80	6400.00
+Necessidade de baixa latência	Dinâmica	E3	P2	8	5	1160.15	136.05	12800.00
+Necessidade de economia de energia	Estática	E2	P1	12	4	445.44	35.84	5120.00
+Restrições de energia	Estática	E1	P2	13	10	2320.30	272.10	25600.00
+Necessidade de segurança aprimorada	Estática	E2	P1	11	7	779.52	62.72	8960.00
+Manutenção de hardware	Estática	E1	P2	17	8	1856.24	217.68	20480.00
+Alta demanda de armazenamento	Dinâmica	E3	P2	6	2	464.06	54.42	5120.00
+Movimento previsível	Estática	E2	P1	9	7	779.52	62.72	8960.00
+Baixa demanda de largura de banda	Estática	E2	P1	12	4	445.44	35.84	5120.00
+Manutenção de hardware	Estática	E1	P2	11	5	1160.15	136.05	12800.00
+Movimento rápido	Dinâmica	E3	P2	15	10	2320.30	272.10	25600.00
+Necessidade de baixa latência	Dinâmica	E3	P2	6	2	464.06	54.42	5120.00
+Restrições de energia	Estática	E1	P2	19	5	1160.15	136.05	12800.00
+Necessidade de alta disponibilidade	Dinâmica	E1	P2	11	6	1392.18	163.26	15360.00
+Necessidade de alta disponibilidade	Dinâmica	E1	P2	8	2	464.06	54.42	5120.00
+Conexão de rede instável	Estática	E3	P2	13	7	1624.21	190.47	17920.00
+Movimento previsível	Estática	E2	P1	12	4	445.44	35.84	5120.00
+Necessidade de segurança aprimorada	Estática	E2	P1	11	7	779.52	62.72	8960.00
+Restrições de energia	Estática	E1	P2	13	6	1392.18	163.26	15360.00
+Demanda variável de recursos	Dinâmica	E1	P2	9	6	1392.18	163.26	15360.00
+Necessidades imprevisíveis	Dinâmica	E1	P2	8	2	464.06	54.42	5120.00
+Restrições de energia	Estática	E1	P2	8	7	1624.21	190.47	17920.00
+Restrições de energia	Estática	E1	P2	12	9	2088.27	244.89	23040.00
+Demanda variável de recursos	Dinâmica	E1	P2	10	5	1160.15	136.05	12800.00
+Restrições de energia	Estática	E1	P2	11	7	1624.21	190.47	17920.00
+Alta demanda de processamento	Dinâmica	E1	P2	17	8	1856.24	217.68	20480.00
+Necessidade de alta disponibilidade	Dinâmica	E1	P2	11	5	1160.15	136.05	12800.00
+Necessidade de alta disponibilidade	Dinâmica	E1	P2	11	6	1392.18	163.26	15360.00
+Necessidade de alta disponibilidade	Dinâmica	E1	P2	11	6	1392.18	163.26	15360.00
+Necessidade de alta disponibilidade	Dinâmica	E1	P2	11	6	1392.18	163.26	15360.00
+Necessidade de baixa latência	Dinâmica	E3	P1	9	7	779.52	62.72	8960.00
+Movimento previsível	Estática	E2	P1	12	9	1002.24	80.64	11520.00
+Necessidade de economia de energia	Estática	E2	P1	11	4	445.44	35.84	5120.00
+Necessidade de economia de energia	Estática	E2	P1	8	7	779.52	62.72	8960.00
+Necessidade de baixa latência	Dinâmica	E3	P1	15	10	1113.60	89.60	12800.00
+Manutenção de hardware	Estática	E1	P2	12	9	2088.27	244.89	23040.00
+Baixa demanda de largura de banda	Estática	E2	P1	9	7	779.52	62.72	8960.00
+Demanda variável de recursos	Dinâmica	E1	P2	13	10	2320.30	272.10	25600.00
+Baixa demanda de largura de banda	Estática	E2	P1	9	7	779.52	62.72	8960.00
+Restrições de energia	Estática	E1	P2	12	9	2088.27	244.89	23040.00
+Movimento rápido	Dinâmica	E3	P1	7	3	334.08	26.88	3840.00
+Manutenção de hardware	Estática	E1	P2	7	4	928.12	108.84	10240.00
+Conexão de rede instável	Estática	E3	P1	14	9	1002.24	80.64	11520.00
+Alta demanda de processamento	Dinâmica	E1	P2	19	5	1160.15	136.05	12800.00
+Alta demanda de armazenamento	Dinâmica	E3	P1	11	6	668.16	53.76	7680.00
+Alta demanda de processamento	Dinâmica	E1	P2	12	4	928.12	108.84	10240.00
+Movimento rápido	Dinâmica	E3	P1	12	4	445.44	35.84	5120.00
+Baixa demanda de largura de banda	Estática	E2	P1	11	5	556.80	44.80	6400.00
+Necessidade de baixa latência	Dinâmica	E3	P1	8	5	556.80	44.80	6400.00
+Necessidade de economia de energia	Estática	E2	P1	12	4	445.44	35.84	5120.00
+Restrições de energia	Estática	E1	P2	13	10	2320.30	272.10	25600.00
+Necessidade de segurança aprimorada	Estática	E2	P1	11	7	779.52	62.72	8960.00
+Manutenção de hardware	Estática	E1	P2	17	8	1856.24	217.68	20480.00
+Alta demanda de armazenamento	Dinâmica	E3	P1	6	2	222.72	17.92	2560.00
+Movimento previsível	Estática	E2	P1	9	7	779.52	62.72	8960.00
+Baixa demanda de largura de banda	Estática	E2	P1	12	4	445.44	35.84	5120.00
+Manutenção de hardware	Estática	E1	P2	11	5	1160.15	136.05	12800.00
+Conexão de rede instável	Estática	E3	P1	14	9	1002.24	80.64	11520.00
+Alta demanda de processamento	Dinâmica	E1	P2	19	5	1160.15	136.05	12800.00
+Alta demanda de armazenamento	Dinâmica	E3	P1	11	6	668.16	53.76	7680.00
+Alta demanda de processamento	Dinâmica	E1	P2	12	4	928.12	108.84	10240.00
+Movimento rápido	Dinâmica	E3	P1	12	4	445.44	35.84	5120.00
+Baixa demanda de largura de banda	Estática	E2	P1	11	5	556.80	44.80	6400.00
+Necessidade de baixa latência	Dinâmica	E3	P1	8	5	556.80	44.80	6400.00
+Necessidade de economia de energia	Estática	E2	P1	12	4	445.44	35.84	5120.00
+Restrições de energia	Estática	E1	P2	13	10	2320.30	272.10	25600.00
+Necessidade de segurança aprimorada	Estática	E2	P1	11	7	779.52	62.72	8960.00
+Manutenção de hardware	Estática	E1	P2	17	8	1856.24	217.68	20480.00
+Alta demanda de armazenamento	Dinâmica	E3	P1	6	2	222.72	17.92	2560.00
+Movimento previsível	Estática	E2	P1	9	7	779.52	62.72	8960.00
+Baixa demanda de largura de banda	Estática	E2	P1	12	4	445.44	35.84	5120.00
+Manutenção de hardware	Estática	E1	P2	11	5	1160.15	136.05	12800.00
+Movimento rápido	Dinâmica	E3	P1	15	10	1113.60	89.60	12800.00
+Necessidade de baixa latência	Dinâmica	E3	P1	6	2	222.72	17.92	2560.00
+Restrições de energia	Estática	E1	P2	19	5	1160.15	136.05	12800.00
+Necessidade de alta disponibilidade	Dinâmica	E1	P2	11	6	1392.18	163.26	15360.00
+Necessidade de alta disponibilidade	Dinâmica	E1	P2	8	2	464.06	54.42	5120.00
+Conexão de rede instável	Estática	E3	P1	13	7	779.52	62.72	8960.00
+Movimento previsível	Estática	E2	P1	12	4	445.44	35.84	5120.00
+Necessidade de segurança aprimorada	Estática	E2	P1	11	7	779.52	62.72	8960.00
+Restrições de energia	Estática	E1	P2	13	6	1392.18	163.26	15360.00
+Demanda variável de recursos	Dinâmica	E1	P2	9	6	1392.18	163.26	15360.00
+Necessidades imprevisíveis	Dinâmica	E1	P2	8	2	464.06	54.42	5120.00
+Restrições de energia	Estática	E1	P2	8	7	1624.21	190.47	17920.00
+Restrições de energia	Estática	E1	P2	12	9	2088.27	244.89	23040.00
+Demanda variável de recursos	Dinâmica	E1	P2	10	5	1160.15	136.05	12800.00
+Demanda variável de recursos	Dinâmica	E1	P2	7	4	928.12	108.84	10240.00
+Alta demanda de largura de banda	Dinâmica	E1	P2	11	6	1392.18	163.26	15360.00
+Necessidade de segurança aprimorada	Estática	E2	P1	9	6	668.16	53.76	7680.00
+Necessidade de baixa latência	Dinâmica	E3	P1	15	6	668.16	53.76	7680.00
+Alta demanda de largura de banda	Dinâmica	E1	P2	6	3	696.09	81.63	7680.00
